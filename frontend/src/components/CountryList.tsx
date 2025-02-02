@@ -10,14 +10,14 @@ export default function CountryList({ countries }: CountryListProps) {
       );
 
   return (
-    <div className="flex flex-col gap-5 border-2 border-zinc-300 text-center px-5 py-2 rounded-md">
+    <div className="flex flex-col gap-5 border-2 border-zinc-50 text-center px-5 py-2 rounded-md">
       <ul>
         {countries.map((country) => (
           <Link
             key={country.countryCode}
             href={`/country/${country.countryCode}`}
           >
-            <li className=" font-bold text-2xl py-1 px-5">
+            <li className=" font-bold text-2xl py-1 px-5 text-center">
               {`${country.name} ${getFlagEmoji(country.countryCode)}`}
             </li>
           </Link>
