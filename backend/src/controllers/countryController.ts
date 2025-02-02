@@ -24,6 +24,7 @@ export const getAvailableCountries = async (req: Request, res: Response) => {
     res.status(500).send("Failed to fetch countries");
   }
 };
+
 export const getCountryInfo = async (req: any, res: any) => {
   const { countryCode } = req.params;
 
